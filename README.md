@@ -16,7 +16,7 @@ Only relevant folders are included in this repository due to PX4 firmware being 
 
 `PX4-Autopilot/msg/`
 
-4. Increase the uORB message enumeration type width from 8-bit to 16-bit within the generation template, otherwise it will not allow compilation of more than 255 uORB topics.
+4. Increase the type width of the uORB message enumeration from 8-bit to 16-bit within the generation template, otherwise it will not allow compilation of more than 255 uORB topics.
 
 `PX4-Autopilot/Tools/msg/templates/uorb/uORBTopics.hpp.em`
 
