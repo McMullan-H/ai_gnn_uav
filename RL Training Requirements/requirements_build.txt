@@ -1,0 +1,7 @@
+pygame==2.3.0
+wandb==0.14.0
+gym==0.17.3
+torch-scatter==2.1.1
+torch-cluster==1.6.1
+torch-sparse==0.6.16
+torch-geometric==2.2.0
