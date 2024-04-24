@@ -1,0 +1,53 @@
+launch:
+  - include:
+      file: "launch/multi_robomaster_rvo.launch.py"
+
+  - node:
+      pkg:  "rvo"
+      exec: "rvo"
+      output: "screen"
+      param:
+        -
+          name:   "uuids"
+          value:
+            - "uav_0"
+            - "uav_1"
+            - "uav_2"
+            - "uav_3"
+            - "uav_4"
+
+        -
+          name:   "neighbor_dist"
+          value:  5.0
+        -
+          name:   "max_neighbors"
+          value:  10
+        -
+          name:   "time_horizon"
+          value:  1.0
+        -
+          name:   "time_horizon_obst"
+# 0.5
+          value:  1.0
+        -
+          name:   "robot_radius"
+# 0.17
+          value:  0.17
+        -
+          name:   "max_speed"
+          value:  0.5
+        -
+          name: "max_accel"
+          value: 3.0
+        -
+          name:   "sim_delta_t"
+          value:  0.025
+        -
+          name:   "goal_reached_dist"
+          value:  0.05
+        -
+          name:   "waypoint_reached_dist"
+          value:  0.3
+        -
+          name:   "robot_desired_yaw"
+          value:  1.57

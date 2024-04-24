@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>waypoint_manager</name>
+  <version>2.0.0</version>
+  <description>Waypoint Manager package</description>
+
+  <maintainer email="ajshank@noreply.users.github.com">ajshank</maintainer>
+  <author email="ajshank@noreply.users.github.com">ajshank</author>
+  <maintainer email="hildebrandt.carl@gmail.com">hildebrandt-carl</maintainer>
+  <author email="hildebrandt.carl@gmail.com">hildebrandt-carl</author>
+  <license>GPLv3</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>freyja_msgs</depend>
+  
+  <build_depend>Eigen3</build_depend>
+  
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>

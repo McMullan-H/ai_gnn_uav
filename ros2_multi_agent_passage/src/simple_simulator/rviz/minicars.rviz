@@ -1,0 +1,267 @@
+Panels:
+  - Class: rviz_common/Displays
+    Help Height: 96
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /TF1
+        - /TF1/Frames1
+        - /Path1
+      Splitter Ratio: 0.5
+    Tree Height: 184
+  - Class: rviz_common/Selection
+    Name: Selection
+  - Class: rviz_common/Tool Properties
+    Expanded:
+      - /2D Goal Pose1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.5886790156364441
+  - Class: rviz_common/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz_default_plugins/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: false
+        minicar_0:
+          Value: true
+        minicar_0_goalpose:
+          Value: false
+        minicar_1:
+          Value: true
+        minicar_1_goalpose:
+          Value: false
+        minicar_2:
+          Value: true
+        minicar_2_goalpose:
+          Value: false
+        minicar_3:
+          Value: true
+        minicar_3_goalpose:
+          Value: false
+        minicar_4:
+          Value: true
+        minicar_4_goalpose:
+          Value: false
+        minicar_5:
+          Value: true
+        minicar_5_goalpose:
+          Value: false
+        minicar_6:
+          Value: true
+        minicar_6_goalpose:
+          Value: false
+        minicar_7:
+          Value: true
+        minicar_7_goalpose:
+          Value: false
+        minicar_8:
+          Value: true
+        minicar_8_goalpose:
+          Value: false
+        minicar_9:
+          Value: true
+        minicar_9_goalpose:
+          Value: false
+        mocap:
+          Value: false
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        mocap:
+          minicar_0:
+            {}
+          minicar_0_goalpose:
+            {}
+          minicar_1:
+            {}
+          minicar_1_goalpose:
+            {}
+          minicar_2:
+            {}
+          minicar_2_goalpose:
+            {}
+          minicar_3:
+            {}
+          minicar_3_goalpose:
+            {}
+          minicar_4:
+            {}
+          minicar_4_goalpose:
+            {}
+          minicar_5:
+            {}
+          minicar_5_goalpose:
+            {}
+          minicar_6:
+            {}
+          minicar_6_goalpose:
+            {}
+          minicar_7:
+            {}
+          minicar_7_goalpose:
+            {}
+          minicar_8:
+            {}
+          minicar_8_goalpose:
+            {}
+          minicar_9:
+            {}
+          minicar_9_goalpose:
+            {}
+      Update Interval: 0
+      Value: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz_default_plugins/Path
+      Color: 25; 255; 0
+      Enabled: true
+      Head Diameter: 0.30000001192092896
+      Head Length: 0.20000000298023224
+      Length: 0.30000001192092896
+      Line Style: Lines
+      Line Width: 0.029999999329447746
+      Name: Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 255; 85; 255
+      Pose Style: None
+      Radius: 0.029999999329447746
+      Shaft Diameter: 0.10000000149011612
+      Shaft Length: 0.10000000149011612
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /path
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: mocap
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+      Hide Inactive Objects: true
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+      Line color: 128; 128; 0
+    - Class: rviz_default_plugins/SetInitialPose
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /initialpose
+    - Class: rviz_default_plugins/SetGoal
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /goal_pose
+    - Class: rviz_default_plugins/PublishPoint
+      Single click: true
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /clicked_point
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 5.731369495391846
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Pitch: 1.0297958850860596
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz)
+      Yaw: 0.07539835572242737
+    Saved:
+      - Class: rviz_default_plugins/Orbit
+        Distance: 8.757803916931152
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.05999999865889549
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Focal Point:
+          X: 0
+          Y: 0
+          Z: 0
+        Focal Shape Fixed Size: true
+        Focal Shape Size: 0.05000000074505806
+        Invert Z Axis: false
+        Name: Orbit
+        Near Clip Distance: 0.009999999776482582
+        Pitch: 0.7253977656364441
+        Target Frame: <Fixed Frame>
+        Value: Orbit (rviz)
+        Yaw: 1.195397973060608
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1024
+  Hide Left Dock: false
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd0000000100000000000001cb0000039cfc0200000004fb000000100044006900730070006c00610079007301000000430000015c0000010400fffffffb0000001200530065006c0065006300740069006f006e01000001a3000000aa0000007a00fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000251000000a80000007a00fffffffb0000000a0056006900650077007301000002fd000000e2000000c800ffffff000005b10000039c00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: false
+  Width: 1920
+  X: 0
+  Y: 28

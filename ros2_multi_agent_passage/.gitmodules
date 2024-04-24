@@ -1,0 +1,12 @@
+[submodule "simple_simulator"]
+	path = src/simple_simulator
+	url = git@github.com:proroklab/ros2_point_robot_simulator.git
+[submodule "src/robomaster_msgs"]
+	path = src/robomaster_msgs
+	url = git@github.com:proroklab/ros2_robomaster_msgs.git
+[submodule "src/Freyja"]
+	path = src/Freyja
+	url = https://github.com/unl-nimbus-lab/Freyja.git
+[submodule "src/rvo/lib/RVO2"]
+	path = src/rvo/lib/RVO2
+	url = https://github.com/snape/RVO2
