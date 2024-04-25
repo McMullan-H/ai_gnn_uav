@@ -1,0 +1,82 @@
+{
+  "batch_mode": "truncate_episodes",
+  "clip_param": 0.2,
+  "entropy_coeff": 0.001,
+  "env": "passage_env",
+  "env_config": {
+    "agent_formation": [
+      [
+        -0.6,
+        -0.6
+      ],
+      [
+        -0.6,
+        0.6
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.6,
+        -0.6
+      ],
+      [
+        0.6,
+        0.6
+      ]
+    ],
+    "agent_radius": 0.25,
+    "communication_range": 2.0,
+    "device": "cpu",
+    "dt": 0.05,
+    "gap_length": 1.0,
+    "grid_px_per_m": 40,
+    "max_a": 1.0,
+    "max_time_steps": 500,
+    "max_v": 1.5,
+    "min_a": -1.0,
+    "n_agents": 5,
+    "num_envs": 32,
+    "placement_keepout_border": 1.0,
+    "placement_keepout_wall": 1.5,
+    "pos_noise_std": 0.0,
+    "render": false,
+    "render_px_per_m": 160,
+    "wall_width": 0.3,
+    "world_dim": [
+      4.0,
+      6.0
+    ]
+  },
+  "evaluation_config": {
+    "record_env": "videos",
+    "render_env": true
+  },
+  "evaluation_interval": 50,
+  "evaluation_num_episodes": 1,
+  "evaluation_num_workers": 1,
+  "evaluation_parallel_to_training": true,
+  "framework": "torch",
+  "gamma": 0.995,
+  "lr": 5e-05,
+  "model": {
+    "custom_action_dist": "hom_multi_action",
+    "custom_model": "model",
+    "custom_model_config": {
+      "activation": "relu",
+      "comm_range": 2.0,
+      "msg_features": 32
+    }
+  },
+  "num_envs_per_worker": 32,
+  "num_gpus": 0,
+  "num_sgd_iter": 18,
+  "num_workers": 4,
+  "observation_filter": "NoFilter",
+  "render_env": false,
+  "seed": 0,
+  "sgd_minibatch_size": 4096,
+  "train_batch_size": 65536,
+  "vf_clip_param": 100.0
+}
