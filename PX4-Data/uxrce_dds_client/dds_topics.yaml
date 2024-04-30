@@ -126,6 +126,9 @@ subscriptions:
 
   - topic: /fmu/in/trajectory_setpoint_3
     type: px4_msgs::msg::TrajectorySetpoint
+    
+  - topic: /fmu/in/trajectory_setpoint_4
+    type: px4_msgs::msg::TrajectorySetpoint
 
   - topic: /fmu/in/trajectory_setpoint_4
     type: px4_msgs::msg::TrajectorySetpoint
