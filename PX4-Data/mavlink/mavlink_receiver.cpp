@@ -1867,14 +1867,14 @@ MavlinkReceiver::handle_message_serial_control(mavlink_message_t *msg)
 
 				// Set the status fields for the remote agent
 				agent_status[(int)data[0] - 1] = {
-					.armed = data[1];
-					.battery_state = data[2];
-				}
+					.armed = (uint8_t)data[1],
+					.battery_state = (uint8_t)data[2]
+				};
 
 				// Update statuses for all agents
 				for(int x = 0; x < 4; x++){
 					agent.armed[x] = agent_status[x].armed;
-					agent.battery_state = agent_status[x].battery_state;
+					agent.battery_state[x] = agent_status[x].battery_state;
 				}
 
 				_remote_status_pub.publish(agent);
