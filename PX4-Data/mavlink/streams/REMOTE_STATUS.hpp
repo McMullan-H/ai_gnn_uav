@@ -25,9 +25,10 @@ private:
     uORB::SubscriptionInterval _parameter_update_sub{ORB_ID(parameter_update), 1_s};
 
     DEFINE_PARAMETERS(
-        (ParamBool<px4::params::GNN_TELEM_ENABLE>) _param_gnn_telem_enable,
-        (ParamInt<px4::params::GNN_TELEM_PORT>) _param_gnn_telem_port,
-        (ParamInt<px4::params::GNN_TELEM_BAUD>) _param_gnn_telem_baud
+        (ParamBool<px4::params::GNN_TELEM_ENABLE>)  _param_gnn_telem_enable,
+        (ParamInt<px4::params::GNN_TELEM_PORT>)     _param_gnn_telem_port,
+        (ParamInt<px4::params::GNN_TELEM_BAUD>)     _param_gnn_telem_baud,
+        (ParamInt<px4::params::GNN_AGENT_ID>)       _param_gnn_agent_id
     )
 
 protected:
@@ -66,7 +67,7 @@ protected:
                 buffer, "STAT: %d %d %d ",
                 (int)_param_gnn_agent_id.get(),
                 (vehicle_status.arming_state == vehicle_status_s::ARMING_STATE_ARMED) ? 2 : 1,
-                (battery_status.warn > 0) ? 1 : 2
+                (battery_status.warning > 0) ? 1 : 2
             );
 
             serial_control.count = fmin(70, len);
@@ -81,6 +82,7 @@ protected:
             return true;
         }
 
+        return false;
     }
 
 };
